@@ -8,7 +8,7 @@ export default class AboutMe extends Component {
     render() {
         return (
             <div className={d.flexContainer} style={styles.background}>
-                <AboutMeText flexBasis='55%'/>
+                <AboutMeText flexBasis='75%'/>
                 <Hobbies flexBasis='15%'/>
             </div>
         );

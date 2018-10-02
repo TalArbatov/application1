@@ -3,4 +3,12 @@
     width:100px;
     background-color:white;
     display: inline-block;
+    align-self:center;
+}
+
+.container > ul {
+    margin:0;
+    text-align: center;
+    padding:20px 5px;
+    position: relative;
 }

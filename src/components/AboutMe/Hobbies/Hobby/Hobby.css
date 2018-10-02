@@ -1,0 +1,18 @@
+/* .row img {
+    width:100px;
+}
+ */
+ .hobby {
+    margin-bottom:30px;
+    
+}
+.hobby > p {
+    margin:0;
+    font-weight: 800;
+}
+.hobby > img{
+    width:100px;
+    height:100px;
+    position: relative;
+}
+
