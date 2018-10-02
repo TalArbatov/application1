@@ -19,7 +19,7 @@ class App extends Component {
           <Hero2 /> */}
           <LandingPage />
           <AboutMe />
-          {/* <div style={{width:'100vw', height:'100vh',background:'#E5E5E5'}}></div> */}
+          <div style={{width:'100vw', height:'100vh',background:'#E5E5E5'}}></div>
         </div>
     );
   }

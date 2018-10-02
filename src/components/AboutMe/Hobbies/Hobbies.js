@@ -18,18 +18,24 @@ const Hobbies = props => {
                 <Hobby logo={robot} description={'Machine Learning'} />
 
 
-                <Parallax styleInner={{position:'absolute'}} className={d.parallax} offsetYMax={-0} offsetYMin={0} tag="figure">
+                <Parallax className={d.parallax} offsetYMax={60} offsetYMin={-140} slowerScrollRate tag="figure">
                     <Hobby logo={book} description={'Science & Literature'} />
+                </Parallax>
+                <Parallax className={d.parallax} offsetYMax={200} offsetYMin={-240} slowerScrollRate tag="figure">
+                    <Hobby logo={brain} description={'Cognitive Psychology'} />
+                </Parallax>
+                <Parallax className={d.parallax} offsetYMax={600} offsetYMin={-380} slowerScrollRate tag="figure">
+                    <Hobby logo={videogame} description={'Video Games'} />
+                </Parallax>
+                <Parallax className={d.parallax} offsetYMax={'1450px'} offsetYMin={'-480px'} slowerScrollRate tag="figure">
+                    <Hobby logo={art} description={'Drawing & Painting'} />
                 </Parallax>
 
 
-                <Hobby logo={brain} description={'Cognitive Psychology'} />
-                <Hobby logo={videogame} description={'Video Games'} />
-                <Hobby logo={art} description={'Drawing & Painting'} />
 
 
-                {/* <Parallax className={d.parallax} offsetYMax={-50} offsetYMin={50} slowerScrollRate tag="figure">
-                </Parallax> */}
+
+
 
             </ul>
         </div>
