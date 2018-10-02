@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 import d from './AboutMe.css';
 import patternBackground from './../../images/about_me/pattern.png';
 import AboutMeText from './AboutMeText/AboutMeText';
+import Hobbies from './Hobbies/Hobbies';
 
 export default class AboutMe extends Component {
     render() {
         return (
-            <div style={styles.background}>
-                <AboutMeText />
+            <div className={d.flexContainer} style={styles.background}>
+                <AboutMeText flexBasis='55%'/>
+                <Hobbies flexBasis='15%'/>
             </div>
         );
     }

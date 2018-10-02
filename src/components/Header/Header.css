@@ -7,7 +7,8 @@
     list-style-type: none;
     text-align: right;
     padding-right:25px;
-
+    margin:0;
+    line-height:30px;
 }
 .navbar li {
     display: inline-block;

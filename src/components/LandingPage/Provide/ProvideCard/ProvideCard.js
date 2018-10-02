@@ -8,7 +8,7 @@ const ProvideCard = (props) => {
             <div className={d.topLine}></div>
             <div className={d.card}>
                 <div className={d.cardInfo}>
-                    <img src={props.icon} alt="web"/>
+                    <img className={d.cardIcon} src={props.icon} alt="web"/>
                     <p>{props.info}</p>
                 </div>
                 <div className={d.cardLogos}>

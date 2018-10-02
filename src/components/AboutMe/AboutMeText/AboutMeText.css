@@ -1,7 +1,7 @@
 
 
 .container {
-    margin-top:20vh;
+    margin-top:10vh;
     display: inline-flex;
     width:60vw;
     flex-direction: row;
@@ -13,6 +13,7 @@
     display: inline-block;
     margin-left:50px;
     margin-right:25px;
+    width:100px;
 }
 
 .textTitle {
@@ -22,8 +23,7 @@
 }
 
 .text {
-    height:60vh;
-    width:70vw;
+    width:60vw;
     background-color: white;
     display: inline-block;
     padding:20px;
