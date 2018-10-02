@@ -1,0 +1,14 @@
+.Background {
+    background-image: url('../../images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width:100vw;
+    height:50vh;
+    
+}
+
+
+.FigureTest {
+    margin:0 !important;
+}

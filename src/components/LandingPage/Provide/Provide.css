@@ -1,0 +1,14 @@
+.cardList {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin-top:1%;
+    width: 60%;
+}
+.container {
+    text-align: center;
+}
+.parallax {
+    margin:0
+}

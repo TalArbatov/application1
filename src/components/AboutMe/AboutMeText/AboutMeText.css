@@ -1,0 +1,36 @@
+
+
+.container {
+    margin-top:20vh;
+    display: inline-flex;
+    width:60vw;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.avatar {
+    display: inline-block;
+    margin-left:50px;
+    margin-right:25px;
+}
+
+.textTitle {
+    font-size:35px;
+    color:#707070;
+    font-weight: 100;
+}
+
+.text {
+    height:60vh;
+    width:70vw;
+    background-color: white;
+    display: inline-block;
+    padding:20px;
+    margin-left:150px;
+}
+
+.text p {
+    color:#707070;
+    font-weight: 100;
+}
