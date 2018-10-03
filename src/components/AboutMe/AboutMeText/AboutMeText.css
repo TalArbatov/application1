@@ -24,7 +24,7 @@
 .text {
     background-color: white;
     display: inline-block;
-    padding:20px;
+    padding:0 20px 20px 20px;
     margin-left:150px;
 
 }
@@ -38,4 +38,7 @@
 }
 .text p:not(:last-child) {
     margin-bottom:35px;  
+}
+.text p:first-child {
+    margin-top:0;
 }

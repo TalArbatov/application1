@@ -11,8 +11,24 @@ export default class Banner extends React.Component {
         setTimeout(() => {
             const typed2 = new Typed(".subtitleElement", subtitleOptions);
         }, 1600);
+        //window.addEventListener('scroll', this.handleScroll, true);
 
     }
+
+
+    // componentWillUnmount = () => {
+    //     window.removeEventListener('scroll', this.handleScroll);
+    // }
+    // handleScroll = (event) => {
+    //     console.log(window.pageYOffset)
+    //     // let scrollTop = event.srcElement.body.scrollTop,
+    //     //     itemTranslate = Math.min(0, scrollTop/3 - 60);
+    //     // console.log(itemTranslate)
+    //     // this.setState({
+    //     //   transform: itemTranslate
+    //     // });
+    // }
+    
 
     render() {
         return (

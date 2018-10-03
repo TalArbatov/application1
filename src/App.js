@@ -1,26 +1,27 @@
-import React, { Component } from 'react';
-import d from './App.css';
-import {MuiThemeProvider, createMuiTheme} from '@material-ui/core';
-import Header from './components/Header/Header';
-import Hero from './components/Hero/Hero';
-import Hero2 from './components/Hero2/Hero2';
-import LandingPage from './components/LandingPage/LandingPage.js'
-import AboutMe from './components/AboutMe/AboutMe';
-
-const theme = createMuiTheme();
-
+import React, { Component } from "react";
+import d from "./App.css";
+import { MuiThemeProvider, createMuiTheme } from "@material-ui/core";
+import Header from "./components/Header/Header";
+import LandingPage from "./components/LandingPage/LandingPage.js";
+import AboutMe from "./components/AboutMe/AboutMe";
+import Skills from "./components/Skills/Skills";
+import GreetBanner from './components/GreetBanner/GreetBanner';
 
 class App extends Component {
   render() {
     return (
-        <div className={d.App}>
-          <Header />
-          {/* <Hero />
-          <Hero2 /> */}
-          <LandingPage />
+      <div className={d.App}>
+        <Header />
+        <LandingPage />
+        <GreetBanner />
+        
+        <section id="about-me">
           <AboutMe />
-          <div style={{width:'100vw', height:'100vh',background:'#E5E5E5'}}></div>
-        </div>
+        </section>
+        <section id="skills">
+          <Skills />
+        </section>
+      </div>
     );
   }
 }

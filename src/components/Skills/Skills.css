@@ -1,0 +1,19 @@
+.container {
+    background-color:#f4f4f4;
+    min-height:100vh;
+    padding-top:100px;
+}
+.flexContainer {
+    display:inline-flex;
+
+}
+
+.text {
+    padding:10px 50px;
+}
+.text p {
+    color:#707070;
+    font-size:20px;
+    font-weight: 100;
+    line-height: 1.5em;
+}

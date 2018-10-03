@@ -1,18 +1,33 @@
-import React from 'react';
-import d from './Header.css';
+import React from "react";
+import d from "./Header.css";
+import Scrollspy from "react-scrollspy";
 
-const Header = () => {
+class Header extends React.Component {
+  render() {
     return (
-       <div className={d.navbar}>
-           <ul>
-               <li><a href='#'>About Me</a></li>
-               <li><a href='#'>Skills</a></li>
-               <li><a href='#'>Resume</a></li>
-               <li><a href='#'>Contact</a></li>
-           </ul>
-       </div>
-
+      <div className={d.navbar}>
+        <ul>
+          <Scrollspy
+            items={["about-me", "skills", "section-3"]}
+            currentClassName="is-current"
+          >
+            <li>
+              <a href="#about-me">About Me</a>
+            </li>
+            <li>
+              <a href="#skills">Skills</a>
+            </li>
+            <li>
+              <a href="#">Resume</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </Scrollspy>
+        </ul>
+      </div>
     );
-};
+  }
+}
 
 export default Header;

@@ -1,0 +1,10 @@
+.chart {
+    display: inline-block;
+    background-color:#dfdfdf;
+    min-width:360px;
+    margin:20px 5px;
+}
+.container {
+    display:flex;
+    justify-content: center;
+}

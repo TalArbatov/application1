@@ -8,7 +8,7 @@ export default class AboutMe extends Component {
     render() {
         return (
             
-            <div className={d.flexContainer} style={styles.background}>
+            <div ref="hello" className={d.flexContainer} style={styles.background}>
                 <AboutMeText flexBasis='75%'/>
                 <Hobbies flexBasis='15%'/>
             </div>
@@ -18,12 +18,11 @@ export default class AboutMe extends Component {
 
 const styles = {
     background: {
-        backgroundImage: `url(${patternBackground})`,
+        // backgroundImage: `url(${patternBackground})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: '50% 50%',
         width: '100vw',
-        height: '100vh',
         
     },
     bannerTitle: {

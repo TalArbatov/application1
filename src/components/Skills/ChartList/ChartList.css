@@ -1,0 +1,8 @@
+.container {
+    width:60vw;
+    padding-left:35px;
+}
+.flexRow {
+    display: flex;
+    justify-content: space-evenly;
+}

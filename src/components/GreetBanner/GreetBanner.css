@@ -1,0 +1,23 @@
+.banner {
+    height:50vh;
+    width:100vw;
+    background-color:#8C43FF;
+    text-align: center;
+    padding: 0 15px;
+    padding-top:45px;
+}
+.banner > p:first-child {
+    color:#efefef;
+    font-family: Gisha;
+    font-weight: 500;
+    font-size: 35px;
+}
+
+.banner > p:nth-child(2) {
+    color:#efefef;
+    font-family: Gisha;
+    font-weight: 100;
+    font-size: 25px;
+    max-width: 70vw;
+    display: inline-block;
+}
