@@ -98,6 +98,7 @@ class Contact extends React.Component {
             </Button>
             {message}
           </form>
+          
           <div className={d.wall} />
         </div>
       </div>

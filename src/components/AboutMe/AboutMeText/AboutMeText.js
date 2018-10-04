@@ -4,7 +4,7 @@ import d from './AboutMeText.css';
 
 const AboutMeText = (props) => {
     return (
-        <div style={{display:'inline', flexBasis:props.flexBasis, alignSelf:'flex-start'}}>
+        <div style={{display:'inline', flexBasis:props.flexBasis, alignSelf:'flex-start', minWidth:'350px'}}>
             <div className={d.container}>
                 <div >
                     <img className={d.avatar} src={avatar} alt="avatar" />
@@ -12,6 +12,7 @@ const AboutMeText = (props) => {
 
                 <div className={d.textTitle}>About Me</div>
             </div>
+
             <div className={d.text}>
                 <p>I'm a 20-year-old web & mobile application developer with a great passion for my work, and currently finishing my mandatory service in the army.</p>
                 <p>I'm serving as a Fullstack web developer in an Information Systems department with exclusively software engineers. As the youngest developer in the department, I've provided modern and innovative technologies, doubled development output by more than twice, and embedded modern workflow protocols and advanced integration services.</p>

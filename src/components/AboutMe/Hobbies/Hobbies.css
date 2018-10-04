@@ -5,7 +5,7 @@
     display: inline-block;
     align-self:center;
     /* background:#fdfbfb; */
-    margin-top:25px;
+    margin-bottom:60px;
 }
 
 .container > ul {
@@ -13,4 +13,9 @@
     text-align: center;
     padding:20px 5px;
     position: relative;
+    list-style-type: none;
+}
+
+.title {
+    font-size:24px;
 }

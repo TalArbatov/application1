@@ -22,7 +22,6 @@ const styles = {
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: '50% 50%',
-        width: '100vw',
         
     },
     bannerTitle: {

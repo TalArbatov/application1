@@ -8,8 +8,8 @@ const ChartList = props => {
       <div className={" " + d.flexRow}>
         <Chart options={frontEnd} />
         <Chart options={backEnd} />
-      {/* </div>
-      <div className={" " + d.flexRow}> */}
+      </div>
+      <div className={" " + d.flexRow}>
         <Chart options={workflow} />
         <Chart options={db} />
       </div>
@@ -20,7 +20,7 @@ const ChartList = props => {
 export default ChartList;
 
 const frontEnd = {
-  maxHeight: 200,
+  maxHeight: 100,
   maxWidth: 200,
   animationEnabled: true,
   animationDuration: 2000,
@@ -118,7 +118,7 @@ const workflow = {
 };
 
 const db = {
-    maxHeight: 200,
+    maxHeight: 100,
     maxWidth: 200,
       animationEnabled: true,
   animationDuration: 2000,
@@ -137,6 +137,7 @@ const db = {
   },
   data: [
     {
+        height:100,
       type: "bar",
       dataPoints: [
         { y: 25, label: "Firebase" },

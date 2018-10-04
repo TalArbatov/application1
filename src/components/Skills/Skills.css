@@ -3,17 +3,22 @@
     height:100%;
 }
 .flexContainer {
-    display:inline-flex;
+    display:flex;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .text {
-    padding:10px 50px;
-    max-width: 40%;
+    padding:10px 3%;
+    flex-basis: 40%;
+    width:90vw;
+    flex-grow:1;
 }
 .text p {
     color:#707070;
     font-size:18px;
     font-weight: 100;
     line-height: 1.5em;
+    display: inline-block;
 }

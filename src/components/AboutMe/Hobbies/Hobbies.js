@@ -17,7 +17,7 @@ const Hobbies = props => {
     return (
         <div className={d.container} style={{ flexBasis: props.flexBasis }}>
             <ul>
-
+                <li><p className={d.title}>My Hobbies</p></li>
                 <Fade right>
                     <Hobby logo={robot} description={'Machine Learning'} />
                 <Hobby logo={book} description={'Science & Literature'} />

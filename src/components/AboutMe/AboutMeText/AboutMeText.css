@@ -10,8 +10,8 @@
 
 .avatar {
     display: inline-block;
-    margin-left:50px;
     margin-right:25px;
+    margin-bottom: 15px;
     width:100px;
 }
 
