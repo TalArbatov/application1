@@ -55,7 +55,7 @@ const Provide = () => {
         // >
         <div className={d.container}>
             <div className={d.cardList}>
-                <MediaQuery orientation='landscape'>
+                <MediaQuery minWidth={1224}>
 
                     <Parallax className={d.parallax} offsetXMax={50} offsetXMin={-90} slowerScrollRate tag="figure">
                         <ProvideCard info={'Responsive and elegant Web & Mobile Applications'} icon={web} logos={[{ src: materialUi, size: 40 }, { src: react, size: 50 }, { src: angular, size: 50 }, { src: bootstrap, size: 50 }, { src: photoshop, size: 50 }, { src: redux, size: 50 }]} />
@@ -75,7 +75,7 @@ const Provide = () => {
                 </MediaQuery>
 
 
-                <MediaQuery orientation='portrait'>
+                <MediaQuery maxWidth={1224}>
 
                     <ProvideCard info={'Responsive and elegant Web & Mobile Applications'} icon={web} logos={[{ src: materialUi, size: 40 }, { src: react, size: 50 }, { src: angular, size: 50 }, { src: bootstrap, size: 50 }, { src: photoshop, size: 50 }, { src: redux, size: 50 }]} />
 

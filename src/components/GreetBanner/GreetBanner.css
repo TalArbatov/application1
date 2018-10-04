@@ -9,14 +9,14 @@
     color:#efefef;
     font-family: Gisha;
     font-weight: 500;
-    font-size: 35px;
+    font-size: 25px;
 }
 
 .banner > p:nth-child(2) {
     color:#efefef;
     font-family: Gisha;
     font-weight: 100;
-    font-size: 25px;
+    font-size: 18px;
     max-width: 70vw;
     display: inline-block;
 }

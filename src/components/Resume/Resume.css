@@ -1,5 +1,4 @@
 .banner {
-    height:50vh;
     width:100vw;
     background-color:#8C43FF;
     text-align: center;
@@ -31,10 +30,10 @@
     font-size:25px;
     transition:0.2s;
     border-radius: 45px;
-
+    margin-bottom:25px;
     background:white;
     color:#8C43FF;
-
+    cursor:pointer;
 }
 
 .downloadButton:hover {

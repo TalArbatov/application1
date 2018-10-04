@@ -8,8 +8,8 @@ const ChartList = props => {
       <div className={" " + d.flexRow}>
         <Chart options={frontEnd} />
         <Chart options={backEnd} />
-      </div>
-      <div className={" " + d.flexRow}>
+      {/* </div>
+      <div className={" " + d.flexRow}> */}
         <Chart options={workflow} />
         <Chart options={db} />
       </div>
@@ -20,8 +20,8 @@ const ChartList = props => {
 export default ChartList;
 
 const frontEnd = {
-  height: 360,
-  width: 360,
+  maxHeight: 200,
+  maxWidth: 200,
   animationEnabled: true,
   animationDuration: 2000,
   backgroundColor: "#f4f4f4",
@@ -52,9 +52,8 @@ const frontEnd = {
   ]
 };
 const backEnd = {
-  height: 360,
-  width: 360,
-  animationEnabled: true,
+    maxHeight: 100,
+    maxWidth: 200,  animationEnabled: true,
   animationDuration: 2000,
   backgroundColor: "#f4f4f4",
   theme: "light2",
@@ -85,9 +84,9 @@ const backEnd = {
 };
 
 const workflow = {
-  height: 360,
-  width: 360,
-  animationEnabled: true,
+    maxHeight: 100,
+    maxWidth: 200,
+      animationEnabled: true,
   animationDuration: 2000,
   backgroundColor: "#f4f4f4",
   theme: "light2",
@@ -119,9 +118,9 @@ const workflow = {
 };
 
 const db = {
-  height: 360,
-  width: 360,
-  animationEnabled: true,
+    maxHeight: 200,
+    maxWidth: 200,
+      animationEnabled: true,
   animationDuration: 2000,
   backgroundColor: "#f4f4f4",
   theme: "light2",

@@ -1,8 +1,10 @@
 .chart {
     display: inline-block;
     background-color:#dfdfdf;
-    min-width:360px;
+    min-width:200px;
     margin:20px 5px;
+    flex-basis:40%;
+    align-self: flex-start;
 }
 .container {
     display:flex;

@@ -1,7 +1,6 @@
 .container {
     background-color:#f4f4f4;
-    min-height:100vh;
-    padding-top:100px;
+    height:100%;
 }
 .flexContainer {
     display:inline-flex;
@@ -10,10 +9,11 @@
 
 .text {
     padding:10px 50px;
+    max-width: 40%;
 }
 .text p {
     color:#707070;
-    font-size:20px;
+    font-size:18px;
     font-weight: 100;
     line-height: 1.5em;
 }

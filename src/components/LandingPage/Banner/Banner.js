@@ -46,7 +46,7 @@ export default class Banner extends React.Component {
                             <p className='titleElement' style={styles.bannerTitle}></p>
 
                         </div>
-                        <div style={{ padding: '0 40px 40px 40px', maxWidth: '50%' }}>
+                        <div style={{ padding: '0 40px 40px 40px' }}>
                             <p className='subtitleElement' style={styles.bannerSubtitle}></p>
                         </div>
                     </div>
@@ -79,19 +79,21 @@ const styles = {
         backgroundPosition: '50% 50%',
         width: '100vw',
         // height: '40vh',
-        'opacity': '0.5'
+        'opacity': '0.5',
+        padding:'20px 0'
     },
     bannerTitle: {
         color: '#EFEFEF',
         fontFamily: 'Gisha',
         margin: 0,
-        fontSize: '100px',
+        fontSize: '60px',
     },
     bannerSubtitle: {
         color: '#EFEFEF',
         fontFamily: 'Gisha',
         margin: 0,
-        fontSize: '32px',
+        fontSize: '25px',
+        maxWidth:'1000px'
     }
 }
 
