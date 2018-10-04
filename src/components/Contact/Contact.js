@@ -17,7 +17,8 @@ class Contact extends React.Component {
       lastName: "",
       email: "",
       message: ""
-    }
+    },
+    formSent: 'none'
   };
 
   formOnChange = (type, e) => {
@@ -29,11 +30,19 @@ class Contact extends React.Component {
   submitForm = () => {
 
       axios.post('contact.php', qs.stringify(this.state.form)).then(res => {
-        console.log('successfully sent mail!')
-      });
+        this.setState({formSent: 'success'})
+      }).catch(err => {
+          this.setState({formSent: 'error'})
+      })
   }
 
   render() {
+    let message = <p></p>
+    if(this.state.formSent === 'success')
+        message = <p style={{color:'green'}}>Message sent successfully!</p>
+    else if(this.state.formSent === 'error')
+        message = <p style={{color:'red'}}>A problem occurred!</p>
+
     return (
       <div className={d.container}>
         <div className={d.wallFlex}>
@@ -87,6 +96,7 @@ class Contact extends React.Component {
             >
               Submit
             </Button>
+            {message}
           </form>
           <div className={d.wall} />
         </div>
