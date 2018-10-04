@@ -6,6 +6,8 @@ import LandingPage from "./components/LandingPage/LandingPage.js";
 import AboutMe from "./components/AboutMe/AboutMe";
 import Skills from "./components/Skills/Skills";
 import GreetBanner from './components/GreetBanner/GreetBanner';
+import Resume from './components/Resume/Resume';
+import Contact from './components/Contact/Contact';
 
 class App extends Component {
   render() {
@@ -20,6 +22,12 @@ class App extends Component {
         </section>
         <section id="skills">
           <Skills />
+        </section>
+        <section id="resume">
+          <Resume />
+        </section>
+        <section id="contact">
+          <Contact />
         </section>
       </div>
     );

@@ -78,7 +78,7 @@ const styles = {
         backgroundRepeat: 'no-repeat',
         backgroundPosition: '50% 50%',
         width: '100vw',
-        height: '40vh',
+        // height: '40vh',
         'opacity': '0.5'
     },
     bannerTitle: {

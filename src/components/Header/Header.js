@@ -18,7 +18,7 @@ class Header extends React.Component {
               <a href="#skills">Skills</a>
             </li>
             <li>
-              <a href="#">Resume</a>
+              <a href="#resume">Resume</a>
             </li>
             <li>
               <a href="#">Contact</a>

@@ -40,6 +40,7 @@ import mongodb from '../../../images/provide-icons/database/mongodb.svg';
 import ruby from '../../../images/provide-icons/database/ruby.svg';
 import ssms from '../../../images/provide-icons/database/ssms.svg';
 import graphql from '../../../images/provide-icons/database/graphql.svg';
+import MediaQuery from 'react-responsive';
 
 
 const Provide = () => {
@@ -54,21 +55,36 @@ const Provide = () => {
         // >
         <div className={d.container}>
             <div className={d.cardList}>
-                <Parallax className={d.parallax} offsetXMax={50} offsetXMin={-90} slowerScrollRate tag="figure">
+                <MediaQuery orientation='landscape'>
+
+                    <Parallax className={d.parallax} offsetXMax={50} offsetXMin={-90} slowerScrollRate tag="figure">
+                        <ProvideCard info={'Responsive and elegant Web & Mobile Applications'} icon={web} logos={[{ src: materialUi, size: 40 }, { src: react, size: 50 }, { src: angular, size: 50 }, { src: bootstrap, size: 50 }, { src: photoshop, size: 50 }, { src: redux, size: 50 }]} />
+                    </Parallax>
+
+                    <Parallax className={d.parallax} offsetXMax={17} offsetXMin={-30} slowerScrollRate tag="figure">
+                        <ProvideCard info={'Highspeed and reliable  backend and API solutions'} icon={backend} logos={[{ src: nodejs, size: 35 }, { src: asp, size: 50 }, { src: ssl, size: 50 }, { src: npm, size: 30 }, { src: https, size: 50 }]} />
+                    </Parallax>
+
+                    <Parallax className={d.parallax} offsetXMax={-17} offsetXMin={30} slowerScrollRate tag="figure">
+                        <ProvideCard info={'Clean workflow and fast team-oriented integration'} icon={workflow} logos={[{ src: slack, size: 50 }, { src: circleci, size: 50 }, { src: git, size: 50 }, { src: github, size: 50 }, { src: grunt, size: 50 }, { src: webpack, size: 60 }]} />
+                    </Parallax>
+
+                    <Parallax className={d.parallax} offsetXMax={-50} offsetXMin={90} slowerScrollRate tag="figure">
+                        <ProvideCard info={'Secure database construction and administration'} icon={database} logos={[{ src: firebase, size: 50 }, { src: mongodb, size: 35 }, { src: ruby, size: 50 }, { src: ssms, size: 50 }, { src: graphql, size: 50 }]} />
+                    </Parallax>
+                </MediaQuery>
+
+
+                <MediaQuery orientation='portrait'>
+
                     <ProvideCard info={'Responsive and elegant Web & Mobile Applications'} icon={web} logos={[{ src: materialUi, size: 40 }, { src: react, size: 50 }, { src: angular, size: 50 }, { src: bootstrap, size: 50 }, { src: photoshop, size: 50 }, { src: redux, size: 50 }]} />
-                </Parallax>
 
-                <Parallax className={d.parallax} offsetXMax={17} offsetXMin={-30} slowerScrollRate tag="figure">
                     <ProvideCard info={'Highspeed and reliable  backend and API solutions'} icon={backend} logos={[{ src: nodejs, size: 35 }, { src: asp, size: 50 }, { src: ssl, size: 50 }, { src: npm, size: 30 }, { src: https, size: 50 }]} />
-                </Parallax>
 
-                <Parallax className={d.parallax} offsetXMax={-17} offsetXMin={30} slowerScrollRate tag="figure">
                     <ProvideCard info={'Clean workflow and fast team-oriented integration'} icon={workflow} logos={[{ src: slack, size: 50 }, { src: circleci, size: 50 }, { src: git, size: 50 }, { src: github, size: 50 }, { src: grunt, size: 50 }, { src: webpack, size: 60 }]} />
-                </Parallax>
 
-                <Parallax className={d.parallax} offsetXMax={-50} offsetXMin={90} slowerScrollRate tag="figure">
                     <ProvideCard info={'Secure database construction and administration'} icon={database} logos={[{ src: firebase, size: 50 }, { src: mongodb, size: 35 }, { src: ruby, size: 50 }, { src: ssms, size: 50 }, { src: graphql, size: 50 }]} />
-                </Parallax>
+                </MediaQuery>
 
             </div>
         </div>

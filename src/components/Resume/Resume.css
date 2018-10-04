@@ -1,4 +1,5 @@
 .banner {
+    height:50vh;
     width:100vw;
     background-color:#8C43FF;
     text-align: center;
@@ -9,14 +10,34 @@
     color:#efefef;
     font-family: Gisha;
     font-weight: 500;
-    font-size: 35px;
 }
-
+.banner p {
+    font-size:18px;
+}
 .banner > p:nth-child(2) {
     color:#efefef;
     font-family: Gisha;
     font-weight: 100;
-    font-size: 25px;
     max-width: 70vw;
     display: inline-block;
+}
+
+.downloadButton {
+    background: transparent;
+    height:65px;
+    width:300px;
+    border: 2px solid white;
+    color:white;
+    font-size:25px;
+    transition:0.2s;
+    border-radius: 45px;
+
+    background:white;
+    color:#8C43FF;
+
+}
+
+.downloadButton:hover {
+    background:#8C43FF;
+    color:white;
 }
