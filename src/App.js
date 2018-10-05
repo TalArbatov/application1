@@ -14,14 +14,14 @@ import Footer from "./components/Footer/Footer";
 
 class App extends Component {
 
-  authenticate(){
+  authenticate() {
     return new Promise(resolve => setTimeout(resolve, 2000))
   }
 
-  componentDidMount(){
+  componentDidMount() {
     this.authenticate().then(() => {
       const ele = document.getElementById('ipl-progress-indicator')
-      if(ele){
+      if (ele) {
         // fade out
         ele.classList.add('available')
         setTimeout(() => {
@@ -37,8 +37,10 @@ class App extends Component {
       <div className={d.App}>
         <Header />
         <LandingPage />
-        <GreetBanner />
-        
+        <Resume />
+
+
+
         <section id="about-me">
           <AboutMe />
         </section>
@@ -46,7 +48,7 @@ class App extends Component {
           <Skills />
         </section>
         <section id="resume">
-          <Resume />
+          <GreetBanner />
         </section>
         <section id="contact">
           <Contact />

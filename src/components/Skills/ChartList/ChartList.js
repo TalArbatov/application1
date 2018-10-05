@@ -42,8 +42,8 @@ const frontEnd = {
       type: "bar",
       dataPoints: [
         { y: 100, label: "React" },
-        { y: 70, label: "Redux" },
-        { y: 80, label: "Angular" },
+        { y: 85, label: "Redux" },
+        { y: 35, label: "Angular" },
         { y: 50, label: "Bootstrap" },
         { y: 75, label: "Material UI" },
         { y: 35, label: "Photoshop" }
@@ -72,12 +72,12 @@ const backEnd = {
     {
       type: "bar",
       dataPoints: [
-        { y: 50, label: "NodeJS" },
-        { y: 30, label: "ASP.NET" },
-        { y: 60, label: "Django" },
-        { y: 100, label: "RoR" },
-        { y: 25, label: "Express" },
-        { y: 95, label: "Flask" }
+        { y: 100, label: "NodeJS" },
+        { y: 35, label: "RoR" },
+        { y: 40, label: "PHP" },
+        { y: 75, label: "ASP.NET" },
+        { y: 25, label: "Django" },
+        { y: 90, label: "Express" },
       ]
     }
   ]
@@ -105,13 +105,12 @@ const workflow = {
     {
       type: "bar",
       dataPoints: [
-        { y: 60, label: "CircleCI" },
-        { y: 100, label: "Slack" },
-        { y: 30, label: "GitHub" },
-        { y: 25, label: "Webpack" },
-        { y: 50, label: "Git" },
-        { y: 30, label: "GitHub" },
-        { y: 95, label: "Grunt" }
+        { y: 25, label: "CircleCI" },
+        { y: 30, label: "Slack" },
+        { y: 95, label: "GitHub" },
+        { y: 80, label: "Webpack" },
+        { y: 100, label: "Git" },
+        { y: 15, label: "Grunt" }
       ]
     }
   ]
@@ -140,11 +139,11 @@ const db = {
         height:100,
       type: "bar",
       dataPoints: [
-        { y: 25, label: "Firebase" },
-        { y: 50, label: "MongoDB" },
-        { y: 60, label: "Mongoose" },
-        { y: 100, label: "GraphQL" },
-        { y: 30, label: "SSMS" },
+        { y: 35, label: "Firebase" },
+        { y: 80, label: "MongoDB" },
+        { y: 80, label: "Mongoose" },
+        { y: 50, label: "GraphQL" },
+        { y: 100, label: "SSMS" },
       ]
     }
   ]

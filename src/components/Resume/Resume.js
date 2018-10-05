@@ -18,8 +18,8 @@ export default class Resume extends Component {
     render() {
         return (
             <div className={d.banner}>
-                <p>Lorem Iposum</p>
-                <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>My resume</p>
+                <p>I provided my resume below</p>
                 <div><button className={d.downloadButton} onClick={this.download}>download</button></div>
                 {/* <form method="POST" action="./learn.php">
                 <table>
