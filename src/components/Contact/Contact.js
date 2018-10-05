@@ -46,7 +46,7 @@ class Contact extends React.Component {
     return (
       <div className={d.container}>
         <div className={d.wallFlex}>
-          <div className={d.wall} />
+          {/* <div className={d.wall} /> */}
           <form method="POST" action="contact.php" className={d.form}>
             <p className={d.title}>Contact Me</p>
 
@@ -54,6 +54,7 @@ class Contact extends React.Component {
               className={d.input}
               id="standard-name"
               label="First Name"
+              variant="filled"
               margin="normal"
               name="firstName"
               onChange={this.formOnChange.bind(this, 'firstName')}
@@ -62,12 +63,14 @@ class Contact extends React.Component {
               className={d.input}
               id="standard-uncontrolled"
               label="Last Name"
+              variant="filled"
               margin="normal"
               name="lastName"
               onChange={this.formOnChange.bind(this, 'lastName')}
             />
             <TextField
               type="email"
+              variant="filled"
               name="email"
               autoComplete="email"
               className={d.input2}
@@ -83,7 +86,7 @@ class Contact extends React.Component {
               rowsMax="10"
               className={d.input3}
               margin="normal"
-              variant="outlined"
+              variant="filled"
               name="message"
               onChange={this.formOnChange.bind(this, 'message')}
             />
@@ -99,7 +102,7 @@ class Contact extends React.Component {
             {message}
           </form>
           
-          <div className={d.wall} />
+          {/* <div className={d.wall} /> */}
         </div>
       </div>
     );

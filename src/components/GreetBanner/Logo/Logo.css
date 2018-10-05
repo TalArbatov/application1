@@ -7,3 +7,8 @@
     border-radius: 50%;
     cursor: pointer;
 }
+.container img {
+    -webkit-filter: invert(1);
+    filter: invert(1);
+ 
+}

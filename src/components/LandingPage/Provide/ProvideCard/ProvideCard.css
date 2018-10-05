@@ -30,6 +30,7 @@
 
 .cardInfo > p {
     padding: 0 8px;
+    font-size:17px;
 }
 
 .cardLogos {
@@ -48,5 +49,5 @@
 .cardIcon {
     padding-top:10px;
 
-    width:100px;
+    width:80px;
 }

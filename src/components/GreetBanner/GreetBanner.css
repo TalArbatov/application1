@@ -32,3 +32,21 @@
     flex-wrap: wrap;
     max-width: 70vw;
 }
+
+
+.phone {
+    padding:30px;
+    display: flex;
+    align-items: center;
+}
+.phone *{
+    display: inline-block;
+    margin:0;
+}
+.phone p {
+    margin-left:7px;
+}
+.phone img {
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}

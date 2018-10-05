@@ -1,3 +1,44 @@
 .parallax {
     margin:0
 }
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+.landingBanner {
+    background-color:black;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-duration: 1.5s;
+    animation-delay: 1.7s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.titleElement {
+	animation-name: titleElementOpacity;
+	animation-iteration-count: 1;
+	animation-duration: 0.7s;
+    animation-delay: 2.4s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    color: #EFEFEF;
+    font-family: Gisha;
+    margin: 0;
+    font-size: 60px;
+
+}
+
+@keyframes titleElementOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

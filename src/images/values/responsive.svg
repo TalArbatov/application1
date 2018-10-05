@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-49 141 512 512" style="enable-background:new -49 141 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#444444;}
+	.st1{fill:#292929;}
+	.st2{fill:#FFD400;}
+	.st3{fill:#FDBF00;}
+	.st4{fill:#5A5A5A;}
+	.st5{fill:#6E6E6E;}
+</style>
+<path class="st0" d="M463,202v255l-30,30H-16.3L-49,457V202c0-24.9,20.1-45,45-45h422C442.9,157,463,177.1,463,202z"/>
+<path class="st1" d="M463,202v255l-30,30H207V157h211C442.9,157,463,177.1,463,202z"/>
+<path class="st2" d="M433,202v285H-19V202c0-8.4,6.6-15,15-15h422C426.4,187,433,193.6,433,202z"/>
+<path class="st3" d="M433,202v285H207V187h211C426.4,187,433,193.6,433,202z"/>
+<path class="st0" d="M312.1,617.2H101.9l30-90c1.8-6,7.5-10.2,14.1-10.2h122c6.6,0,12.3,4.2,14.1,10.2L312.1,617.2z"/>
+<path class="st1" d="M282.1,527.2l30,90H207V517h61C274.6,517,280.3,521.2,282.1,527.2z"/>
+<path class="st4" d="M463,457v45c0,24.9-20.1,45-45,45H-4c-24.9,0-45-20.1-45-45v-45H463z"/>
+<path class="st0" d="M463,457v45c0,24.9-20.1,45-45,45H207v-90H463z"/>
+<path class="st4" d="M373,622c0,8.4-6.6,15-15,15H56c-8.4,0-15-6.6-15-15c0-8.4,6.6-15,15-15h302C366.4,607,373,613.6,373,622z"/>
+<path class="st0" d="M373,622c0,8.4-6.6,15-15,15H207v-30h151C366.4,607,373,613.6,373,622z"/>
+<polygon class="st4" points="463,397 463,547 433,577 283,577 253,547 253,397 283,367 433,367 "/>
+<polygon class="st0" points="463,397 463,547 433,577 358,577 358,367 433,367 "/>
+<rect x="283" y="367" class="st2" width="150" height="210"/>
+<rect x="358" y="367" class="st3" width="75" height="210"/>
+<path class="st5" d="M463,547v45c0,24.9-20.1,45-45,45H298c-24.9,0-45-20.1-45-45v-45H463z"/>
+<path class="st4" d="M358,547h105v45c0,24.9-20.1,45-45,45h-60V547z"/>
+<path class="st5" d="M463,352v45H253v-45c0-24.9,20.1-45,45-45h120C442.9,307,463,327.1,463,352z"/>
+<path class="st4" d="M463,352v45H358v-90h60C442.9,307,463,327.1,463,352z"/>
+</svg>

@@ -6,14 +6,14 @@ import contact_github from '../../images/contact/contact_github.svg';
 import contact_facebook from '../../images/contact/contact_facebook.svg';
 import contact_gmail from '../../images/contact/contact_gmail.svg';
 import contact_linkedin from '../../images/contact/contact_linkedin.svg';
+import phone from '../../images/phone.svg';
 
 const GreetBanner = props => {
   return (
     <div className={d.banner}>
       <div className={d.flexContainer}>
-        <p>Contact Me</p>
+        <p>Interested in hiring or collaborating? </p>
         <p>
-        
           I am available during the entire week through LinkedIn, GitHub, Facebook and Gmail.
         </p>
         <div className={d.mediaContainer}>
@@ -22,7 +22,11 @@ const GreetBanner = props => {
             <Logo logo={contact_facebook} text='Facebook' link='https://www.facebook.com/tal.arbatovnew.9'/>
             <Logo logo={contact_gmail} text='Gmail' link='mailto:talarbatov98@gmail.com'/>
         </div>
-        <p>Phone: +972-50-399-3701</p>
+        <div className={d.phone}>
+        <img src={phone} alt='phone'></img>
+        <p>+972-50-399-3701</p>
+        </div>
+        
       </div>
     </div>
   );

@@ -7,10 +7,14 @@ import Typed from 'typed.js';
 
 export default class Banner extends React.Component {
     componentDidMount() {
-        const typed = new Typed(".titleElement", titleOptions);
+        
+        // setTimeout(() => {
+        //     const typed = new Typed(".titleElement", titleOptions);   
+        // }, 3500);
+
         setTimeout(() => {
             const typed2 = new Typed(".subtitleElement", subtitleOptions);
-        }, 1600);
+        }, 3300);
         //window.addEventListener('scroll', this.handleScroll, true);
 
     }
@@ -41,9 +45,11 @@ export default class Banner extends React.Component {
             // >
 
                 <div className="container">
-                    <div style={styles.landingBanner}>
+                    <div className={d.landingBanner}style={styles.landingBanner}>
                         <div style={{ padding: '40px' }}>
-                            <p className='titleElement' style={styles.bannerTitle}></p>
+                            {/* <p className='titleElement' style={styles.bannerTitle}></p> */}
+
+                            <p className={d.titleElement}>Hello, I'm Tal</p>
 
                         </div>
                         <div style={{ padding: '0 40px 40px 40px' }}>
@@ -60,7 +66,7 @@ export default class Banner extends React.Component {
 
 const titleOptions = {
     strings: ["Hello, I'm Tal."],
-    typeSpeed: 70,
+    typeSpeed: 1,
     smartBackspace: false,
     showCursor: false,
 }
@@ -78,10 +84,10 @@ const styles = {
         backgroundRepeat: 'no-repeat',
         backgroundPosition: '50% 50%',
         width: '100vw',
-        // height: '40vh',
-        'opacity': '0.5',
+        minHeight: '40vh',
         padding:'20px 0'
     },
+   
     bannerTitle: {
         color: '#EFEFEF',
         fontFamily: 'Gisha',
@@ -93,7 +99,7 @@ const styles = {
         fontFamily: 'Gisha',
         margin: 0,
         fontSize: '25px',
-        maxWidth:'1000px'
+        maxWidth:'500px'
     }
 }
 

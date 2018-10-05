@@ -37,23 +37,37 @@ class App extends Component {
       <div className={d.App}>
         <Header />
         <LandingPage />
-        <Resume />
+        
 
 
 
         <section id="about-me">
-          <AboutMe />
+        {/* <div style={{height:7, backgroundColor: '#d8d8d8'}}></div> */}
+
+        <Skills />
+          
         </section>
+        <div style={{height:7, backgroundColor: '#6b32c5'}}></div>
+
+        <Resume />
         <section id="skills">
-          <Skills />
+        {/* <div style={{height:7, backgroundColor: '#d8d8d8'}}></div> */}
+
+        <AboutMe />
         </section>
         <section id="resume">
-          <GreetBanner />
+        <div style={{height:7, backgroundColor: '#e2e2e2'}}></div>
+
+        <Contact />
         </section>
+
         <section id="contact">
-          <Contact />
+        <div style={{height:7, backgroundColor: '#6b32c5'}}></div>
+        <GreetBanner />
+
+
         </section>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     );
   }

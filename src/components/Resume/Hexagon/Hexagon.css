@@ -1,0 +1,50 @@
+.hexagon {
+  width:133px;
+  height:116px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  
+}
+
+
+.hexagon img {
+  
+  width:70px;
+}
+
+.container {
+  width:250px;
+  align-items: center;
+  text-align: center;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom:20px;
+}
+
+.text {
+  display:flex;
+  justify-content: center;
+  justify-items: center;
+  max-width: 200px;
+
+}
+.text p {
+  color:white;
+}
+.titleContainer {
+  flex-basis: 100%;
+  color:white;
+  font-weight: 100;
+  max-width: 200px;
+}
+.titleContainer p {
+  font-size:25px;
+  font-family: Gisha;
+  letter-spacing: 2px;
+  margin:0;
+  margin-bottom: 10px;
+
+}

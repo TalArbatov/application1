@@ -19,11 +19,13 @@ const ChartList = props => {
 
 export default ChartList;
 
+const height = 250;
+
 const frontEnd = {
-  maxHeight: 100,
-  maxWidth: 200,
+  height: height,
+  
   animationEnabled: true,
-  animationDuration: 2000,
+  animationDuration: 7000,
   backgroundColor: "#f4f4f4",
   theme: "light2",
   title: {
@@ -35,6 +37,7 @@ const frontEnd = {
   },
   axisY: {
     title: "",
+    maximum:100,
     labelFormatter: this.addSymbols
   },
   data: [
@@ -52,9 +55,11 @@ const frontEnd = {
   ]
 };
 const backEnd = {
-    maxHeight: 100,
-    maxWidth: 200,  animationEnabled: true,
-  animationDuration: 2000,
+    height: height,
+     
+    animationEnabled: true,
+  animationDuration: 7000,
+  easing: 'easeInQuad',
   backgroundColor: "#f4f4f4",
   theme: "light2",
   title: {
@@ -66,6 +71,7 @@ const backEnd = {
   },
   axisY: {
     title: "",
+    maximum:100,
     labelFormatter: this.addSymbols
   },
   data: [
@@ -84,10 +90,10 @@ const backEnd = {
 };
 
 const workflow = {
-    maxHeight: 100,
-    maxWidth: 200,
+    height: height,
+    
       animationEnabled: true,
-  animationDuration: 2000,
+  animationDuration: 7000,
   backgroundColor: "#f4f4f4",
   theme: "light2",
   title: {
@@ -99,6 +105,7 @@ const workflow = {
   },
   axisY: {
     title: "",
+    maximum:100,
     labelFormatter: this.addSymbols
   },
   data: [
@@ -117,10 +124,10 @@ const workflow = {
 };
 
 const db = {
-    maxHeight: 100,
-    maxWidth: 200,
-      animationEnabled: true,
-  animationDuration: 2000,
+    height: height,
+    
+  animationEnabled: true,
+  animationDuration: 7000,
   backgroundColor: "#f4f4f4",
   theme: "light2",
   title: {
@@ -132,6 +139,7 @@ const db = {
   },
   axisY: {
     title: "",
+    maximum:100,
     labelFormatter: this.addSymbols
   },
   data: [
