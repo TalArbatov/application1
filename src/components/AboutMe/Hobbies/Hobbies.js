@@ -11,51 +11,50 @@ import { Parallax } from 'react-scroll-parallax';
 import Zoom from 'react-reveal/Zoom'; // Importing Zoom effect
 import Fade from 'react-reveal/Fade';
 import Flash from 'react-reveal/Flash';
+import MediaQuery from 'react-responsive';
 
 
 const Hobbies = props => {
-    return (
-        <div className={d.container} style={{ flexBasis: props.flexBasis }}>
-            <ul>
-                <li><p className={d.title}>My Hobbies</p></li>
-                <Fade right>
-                    <Hobby logo={robot} description={'Machine Learning'} />
-                <Hobby logo={book} description={'Science & Literature'} />
-                <Hobby logo={brain} description={'Cognitive Psychology'} />
-                <Hobby logo={videogame} description={'Video Games'} />
-                <Hobby logo={art} description={'Drawing & Painting'} />
-                </Fade>
+    return [
+        //pc
+        <MediaQuery minWidth={700}>
 
-              
+            <div className={d.container} >
+                <ul>
+                    <div className={d.expFlex}>
+                    <li className={d.titleContainer}><p className={d.title}>My Hobbies</p></li>
 
+                        <Fade right>
+                            <Hobby logo={robot} description={'Machine Learning'} />
+                            <Hobby logo={book} description={'Science & Literature'} />
+                            <Hobby logo={brain} description={'Cognitive Psychology'} />
+                            <Hobby logo={videogame} description={'Video Games'} />
+                            <Hobby logo={art} description={'Drawing & Painting'} />
+                        </Fade>
+                    </div>
+                </ul>
+            </div>
+        </MediaQuery>,
+        //phone
+        <MediaQuery maxWidth={700}>
 
-                {/*
+            <div className={d.container2} >
+                <ul>
+                    <div className={d.expFlex}>
+                    <li className={d.titleContainer}><p className={d.title}>My Hobbies</p></li>
 
-                <Hobby logo={robot} description={'Machine Learning'} />
-                <Parallax className={d.parallax} offsetYMax={60} offsetYMin={-140} slowerScrollRate tag="figure">
-                    <Hobby logo={book} description={'Science & Literature'} />
-                </Parallax>
-                <Parallax className={d.parallax} offsetYMax={200} offsetYMin={-240} slowerScrollRate tag="figure">
-                    <Hobby logo={brain} description={'Cognitive Psychology'} />
-                </Parallax>
-                <Parallax className={d.parallax} offsetYMax={600} offsetYMin={-380} slowerScrollRate tag="figure">
-                    <Hobby logo={videogame} description={'Video Games'} />
-                </Parallax>
-                <Parallax className={d.parallax} offsetYMax={'1450px'} offsetYMin={'-480px'} slowerScrollRate tag="figure">
-                    <Hobby logo={art} description={'Drawing & Painting'} />
-                </Parallax>
-
-*/}
-
-
-
-
-
-
-
-            </ul>
-        </div>
-    )
+                        <Fade right>
+                            <Hobby logo={robot} description={'Machine Learning'} />
+                            <Hobby logo={book} description={'Science & Literature'} />
+                            <Hobby logo={brain} description={'Cognitive Psychology'} />
+                            <Hobby logo={videogame} description={'Video Games'} />
+                            <Hobby logo={art} description={'Drawing & Painting'} />
+                        </Fade>
+                    </div>
+                </ul>
+            </div>
+        </MediaQuery>
+    ]
 }
 
 export default Hobbies;

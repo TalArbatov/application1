@@ -3,8 +3,10 @@
 }
  */
  .hobby {
-    margin-bottom:30px;
     
+    display: inline-block;
+    width:135px;
+    margin:0 30px 30px 30px;
 }
 .hobby > p {
     margin:0;

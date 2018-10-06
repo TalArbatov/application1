@@ -4,7 +4,7 @@ import d from './AboutMeText.css';
 
 const AboutMeText = (props) => {
     return (
-        <div style={{display:'inline', flexBasis:props.flexBasis, alignSelf:'flex-start', minWidth:'350px'}}>
+        <div style={{display:'inline', flexBasis:props.flexBasis, alignSelf:'flex-start'}}>
             <div className={d.container}>
                 <div >
                     <img className={d.avatar} src={avatar} alt="avatar" />

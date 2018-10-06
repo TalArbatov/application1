@@ -15,13 +15,25 @@
 }
 
 .container {
-  width:250px;
   align-items: center;
   text-align: center;
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom:20px;
+}
+/*pc*/
+@media only screen and (min-width: 800px) {
+  .container {
+    width:250px;
+
+  }
+}
+/*phone*/
+@media only screen and (max-width: 800px) {
+.container {
+  width:200px;
+}
 }
 
 .text {

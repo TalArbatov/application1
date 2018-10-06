@@ -6,9 +6,16 @@
     align-self:center;
     /* background:#fdfbfb; */
     margin-bottom:60px;
+    display: inline-block;
+}
+.containerPhone {
+    height:800px;
+    background-color:white;
+    align-self:center;
+    display: block;
 }
 
-.container > ul {
+.container ul, .container2 ul {
     margin:0;
     text-align: center;
     padding:20px 5px;
@@ -18,4 +25,13 @@
 
 .title {
     font-size:24px;
+}
+.titleContainer {
+    flex-basis:100%;
+}
+
+.expFlex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
