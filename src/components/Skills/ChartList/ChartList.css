@@ -1,10 +1,9 @@
 .container {
-    flex-basis: 45%;
+    flex-basis: 40%;
     flex-grow: 1;
     max-width: 90vw;
 }
 .flexRow {
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: nowrap;
 }

@@ -3,23 +3,28 @@ import background from '../../../images/background2.jpg';
 import { Parallax } from 'react-scroll-parallax';
 import d from './Banner.css';
 import Typed from 'typed.js';
+// import hebrewTranslation from "../../../translations/he.translation.json";
+// import englishTranslation from '../../../translations/en.translation.json';
+import { withLocalize } from 'react-localize-redux';
+import { Translate } from "react-localize-redux";
 
 
-export default class Banner extends React.Component {
+ class Banner extends React.Component {
     componentDidMount() {
-        
-        // setTimeout(() => {
-        //     const typed = new Typed(".titleElement", titleOptions);   
-        // }, 3500);
+        //language localization
+        // this.props.addTranslation(hebrewTranslation);
+        // this.props.addTranslation(englishTranslation);
 
+        //self typing text
         setTimeout(() => {
-            const typed2 = new Typed(".subtitleElement", subtitleOptions);
+            const typed2 = new Typed(".subtitleElement", this.subtitleOptions);
         }, 3300);
-        //window.addEventListener('scroll', this.handleScroll, true);
 
     }
 
-
+    componentDidUpdate() {
+        
+    }
     // componentWillUnmount = () => {
     //     window.removeEventListener('scroll', this.handleScroll);
     // }
@@ -33,6 +38,12 @@ export default class Banner extends React.Component {
     //     // });
     // }
     
+    subtitleOptions = {
+        strings: ["A Fullstack web developer with a passion for creating clean and elegant solutions."],
+        typeSpeed: 15,
+        showCursor: false,
+    
+    }
 
     render() {
         return (
@@ -49,11 +60,14 @@ export default class Banner extends React.Component {
                         <div style={{ padding: '40px' }}>
                             {/* <p className='titleElement' style={styles.bannerTitle}></p> */}
 
-                            <p className={d.titleElement}>Hello, I'm Tal</p>
-
+                            {/* <p className={d.titleElement}>Hello, I am Tal</p> */}
+                            <p className={d.titleElement}> <Translate id="movie.title">Hello I am Tal</Translate></p>
                         </div>
                         <div style={{ padding: '0 40px 40px 40px' }}>
-                            <p className='subtitleElement' style={styles.bannerSubtitle}></p>
+                        
+                            <p className='subtitleElement' style={styles.bannerSubtitle}>
+                            
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -64,18 +78,18 @@ export default class Banner extends React.Component {
     }
 }
 
+export default withLocalize(Banner);
+
 const titleOptions = {
     strings: ["Hello, I'm Tal."],
     typeSpeed: 1,
     smartBackspace: false,
     showCursor: false,
 }
-const subtitleOptions = {
-    strings: ["A Fullstack web developer with a passion for creating clean and elegant solutions."],
-    typeSpeed: 15,
-    showCursor: false,
 
-}
+
+
+
 
 const styles = {
     landingBanner: {

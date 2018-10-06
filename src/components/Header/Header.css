@@ -26,3 +26,10 @@
     /* border-bottom:2px solid black; */
     text-decoration: underline;
 }
+
+.list {
+    width:250px;
+}
+.appbar , .appbar > div{
+    min-height:0;
+}

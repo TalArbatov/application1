@@ -26,7 +26,7 @@
 
 .text {
     padding:10px 3%;
-    flex-basis: 40%;
+    flex-basis: 60%;
     width:90vw;
     flex-grow:1;
 }

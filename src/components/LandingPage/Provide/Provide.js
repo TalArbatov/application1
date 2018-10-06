@@ -44,6 +44,8 @@ import graphql from '../../../images/provide-icons/database/graphql.svg';
 import ssl from '../../../images/provide-icons/database/ssl.svg';
 
 
+import { withLocalize } from 'react-localize-redux';
+import { Translate } from "react-localize-redux";
 
 
 import MediaQuery from 'react-responsive';
@@ -64,8 +66,11 @@ const Provide = () => {
                 <MediaQuery minWidth={1224}>
 
                     <Parallax className={d.parallax} offsetXMax={50} offsetXMin={-90} slowerScrollRate tag="figure">
-                        <ProvideCard info={'Responsive and elegant Web & Mobile Applications'} icon={web} logos={[{ src: materialUi, size: 40 }, { src: react, size: 50 }, { src: angular, size: 50 }, { src: bootstrap, size: 50 }, { src: photoshop, size: 50 }, { src: redux, size: 50 }]} />
+                        {/* <ProvideCard info={'Responsive and elegant Web & Mobile Applications'} icon={web} logos={[{ src: materialUi, size: 40 }, { src: react, size: 50 }, { src: angular, size: 50 }, { src: bootstrap, size: 50 }, { src: photoshop, size: 50 }, { src: redux, size: 50 }]} /> */}
+                        <ProvideCard info={<Translate id="movie.provide.web">Responsive and elegant Web & Mobile Applications</Translate>} icon={web} logos={[{ src: materialUi, size: 40 }, { src: react, size: 50 }, { src: angular, size: 50 }, { src: bootstrap, size: 50 }, { src: photoshop, size: 50 }, { src: redux, size: 50 }]} />
+
                     </Parallax>
+                    
 
                     <Parallax className={d.parallax} offsetXMax={17} offsetXMin={-30} slowerScrollRate tag="figure">
                         <ProvideCard info={'Highspeed and reliable  backend and API solutions'} icon={backend} logos={[{ src: nodejs, size: 35 }, { src: asp, size: 50 }, { src: ruby, size: 50 }, { src: npm, size: 25 }, { src: php, size: 35 }]} />

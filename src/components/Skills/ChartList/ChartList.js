@@ -1,11 +1,13 @@
 import React from "react";
 import d from "./ChartList.css";
 import Chart from "./Chart/Chart";
+import MediaQuery from 'react-responsive';
 
 const ChartList = props => {
   return (
     <div className={' ' + d.container}>
-      <div className={" " + d.flexRow}>
+    <MediaQuery minWidth={850}>
+    <div style={{flexWrap:'nowrap'}} className={" " + d.flexRow}>
         <Chart options={frontEnd} />
         <Chart options={backEnd} />
       </div>
@@ -13,6 +15,19 @@ const ChartList = props => {
         <Chart options={workflow} />
         <Chart options={db} />
       </div>
+    </MediaQuery>
+    <MediaQuery maxWidth={850}>
+    <div style={{flexWrap:'wrap'}} className={" " + d.flexRow}>
+        <Chart options={frontEnd} />
+        <Chart options={backEnd} />
+      </div>
+      <div style={{flexWrap:'wrap'}} className={" " + d.flexRow}>
+        <Chart options={workflow} />
+        <Chart options={db} />
+      </div>
+    </MediaQuery>
+    
+    
     </div>
   );
 };
