@@ -1,0 +1,84 @@
+{
+  "Header": {
+    "Skills": "My Skills",
+    "AboutMe": "About Me",
+    "Values": "My Values",
+    "ContactMe": "Contact Me"
+  },
+  "landingPage": {
+    "title": "Hello, I am Tal.",
+    "subtitle": "A Fullstack web developer with a passion for creating clean and elegant solutions.",
+    "provide": {
+      "web": "Responsive and elegant Web & Mobile Applications.",
+      "backend": "Highspeed and reliable backend and API solutions.",
+      "workflow": "Clean workflow and fast team-oriented integration.",
+      "database": "Secure database construction and administration."
+    }
+  },
+  "Values": {
+    "fast": {
+      "title": "FAST",
+      "description": "Lag free and fast load times."
+    },
+    "elegant": {
+      "title": "ELEGANT",
+      "description": "Beautiful and clean design with a minimalistic style."
+    },
+    "dynamic": {
+      "title": "DYNAMIC",
+      "description": "Immersive design filled with functionality."
+    },
+    "intuitive": {
+      "title": "INTUITIVE",
+      "description": "Accessive and easy to use UX."
+    },
+    "responsive": {
+      "title": "RESPONSIVE",
+      "description": "Flexible design that fits on any device"
+    },
+    "secure": {
+      "title": "SECURE",
+      "description": "Reliable software and protection technology."
+    }
+  },
+  "Skills": {
+    "title": "MY SKILLS",
+    "p1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "p2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim praesent elementum facilisis leo. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Augue ut lectus arcu bibendum at varius vel pharetra. Lacus",
+    "p3": "Pellentesque id nibh tortor id. In egestas erat imperdiet sed euismod nisi porta lorem mollis. Massa placerat duis ultricies lacus sed turpis tincidunt id. Auctor augue mauris augue neque gravida. Ultricies lacus sed turpis tincidunt. Condimentum"
+  },
+  "AboutMe": {
+    "mainText": {
+      "title": "About me",
+      "p1": "I'm a 20-year-old web & mobile application developer with a great passion for my work, and currently finishing my mandatory service in the army.",
+      "p2": "I'm serving as a Fullstack web developer in an Information Systems department with exclusively software engineers. As the youngest developer in the department, I've provided modern and innovative technologies, doubled development output by more than twice, and embedded modern workflow protocols and advanced integration services.",
+      "p3": "During my service, I received 3 certificates of excellence, developed 75% of my department's output, sent to 3 professional courses regarding development, web security and system administration, and worked on countless side-projects on my own.",
+      "p4": "I'm serving as a Fullstack web developer in an Information Systems department with exclusively software engineers. As the youngest developer in the department, I've provided modern and innovative technologies, doubled development output by more than twice, and embedded modern workflow protocols and advanced integration services.",
+      "p5": "During my service, I received 3 certificates of excellence, developed 75% of my department's output, sent to 3 professional courses regarding development, web security and system administration, and worked on countless side-projects on my own."
+    },
+    "Hobbies": {
+      "title": "My Hobbies",
+      "Hobby1": "Machine Learning",
+      "Hobby2": "Science & Literature",
+      "Hobby3": "Cognitive Psychology",
+      "Hobby4": "Video Games",
+      "Hobby5": "Drawing & Painting"
+    }
+  },
+  "Contact": {
+    "form": {
+      "title": "Contact Me",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "message": "Message",
+      "button": "submit",
+      "error": "Message sent successfully!",
+      "success": "A problem occurred!"
+    },
+    "purplePaper": {
+      "title": "Interested in hiring or collaborating?",
+      "subtitle": "I am available during the entire week through LinkedIn, GitHub, Facebook and Gmail."
+    }
+  }
+}

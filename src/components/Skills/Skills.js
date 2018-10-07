@@ -1,36 +1,71 @@
 import React from "react";
 import d from "./Skills.css";
 import ChartList from "./ChartList/ChartList";
-import MediaQuery from 'react-responsive';
+import MediaQuery from "react-responsive";
+import { connect } from "react-redux";
+import { withNamespaces, NamespacesConsumer, Trans } from "react-i18next";
 
-const Skills = props => {
-  return (
-    <div className={" " + d.container}>
-    {/* <div className={d.titleContainer}><p>MY SKILLS</p></div> */}
-    <MediaQuery minWidth={850}>
-    <div className={" " + d.flexContainer}>
-    <ChartList />
-        <div className={d.text}>
-            <p className={d.title}>MY SKILLS</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim praesent elementum facilisis leo. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Augue ut lectus arcu bibendum at varius vel pharetra. Lacus</p>
-            <p>Pellentesque id nibh tortor id. In egestas erat imperdiet sed euismod nisi porta lorem mollis. Massa placerat duis ultricies lacus sed turpis tincidunt id. Auctor augue mauris augue neque gravida. Ultricies lacus sed turpis tincidunt. Condimentum</p>
-        </div>
+class Skills extends React.Component {
+
+  render() {
+    
+    let style;
+    if(this.props.rootReducer.language === 'en')
+      style = {direction:'ltr'}
+    else if (this.props.rootReducer.language === 'he')
+      style = {direction: 'rtl'}
+    
+    return (
+      <div className={" " + d.container}>
+        {/* <div className={d.titleContainer}><p>MY SKILLS</p></div> */}
+        {/* <button onClick={() => console.log(this.props)}>debug</button> */}
+        <MediaQuery minWidth={850}>
+          <div className={" " + d.flexContainer}>
+            <ChartList />
+            <div style={style} className={d.text}>
+              <p className={d.title}><Trans i18nKey="Skills.title" /></p>
+              <p>
+              <Trans i18nKey="Skills.p1" />
+              </p>
+              <p>
+              <Trans i18nKey="Skills.p2" />
+
+              </p>
+              <p>
+              <Trans i18nKey="Skills.p3" />
+
+              </p>
+            </div>
+          </div>
+        </MediaQuery>
+        <MediaQuery maxWidth={850}>
+          <div className={" " + d.flexContainer}>
+            <div className={d.text}>
+              <p className={d.title}><Trans i18nKey="Skills.title" /></p>
+              <p>
+              <Trans i18nKey="Skills.p1" />
+
+              </p>
+              <p>
+              <Trans i18nKey="Skills.p2" />
+
+              </p>
+              <p>
+              <Trans i18nKey="Skills.p3" />
+
+              </p>
+            </div>
+            <ChartList />
+          </div>
+        </MediaQuery>
       </div>
-    </MediaQuery>
-    <MediaQuery maxWidth={850}>
-    <div className={" " + d.flexContainer}>
-        
-        <div className={d.text}>
-            <p className={d.title}>MY SKILLS</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim praesent elementum facilisis leo. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Augue ut lectus arcu bibendum at varius vel pharetra. Lacus</p>
-            <p>Pellentesque id nibh tortor id. In egestas erat imperdiet sed euismod nisi porta lorem mollis. Massa placerat duis ultricies lacus sed turpis tincidunt id. Auctor augue mauris augue neque gravida. Ultricies lacus sed turpis tincidunt. Condimentum</p>
-        </div>
-        <ChartList />
-      </div>
-    </MediaQuery>
-      
-    </div>
-  );
+    );
+  }
+}
+
+const mapStateToProps = state => {
+  return {
+    rootReducer: state
+  };
 };
-
-export default Skills;
+export default connect(mapStateToProps)(withNamespaces("translation")(Skills));

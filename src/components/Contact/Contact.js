@@ -8,6 +8,9 @@ import classNames from "classnames";
 import { withStyles } from "@material-ui/core/styles";
 import { compileFunction } from "vm";
 import axios from 'axios';
+
+import { withNamespaces, NamespacesConsumer, Trans } from "react-i18next";
+
 const qs = require('qs');
 
 class Contact extends React.Component {
@@ -39,21 +42,21 @@ class Contact extends React.Component {
   render() {
     let message = <p></p>
     if(this.state.formSent === 'success')
-        message = <p style={{color:'green'}}>Message sent successfully!</p>
+        message = <p style={{color:'green'}}><Trans i18nKey="Contact.form.success" /></p>
     else if(this.state.formSent === 'error')
-        message = <p style={{color:'red'}}>A problem occurred!</p>
+        message = <p style={{color:'red'}}><Trans i18nKey="Contact.form.error" /></p>
 
     return (
       <div className={d.container}>
         <div className={d.wallFlex}>
           {/* <div className={d.wall} /> */}
           <form method="POST" action="contact.php" className={d.form}>
-            <p className={d.title}>Contact Me</p>
+            <p className={d.title}><Trans i18nKey="Contact.form.title" /></p>
 
             <TextField
               className={d.input}
               id="standard-name"
-              label="First Name"
+              label={<Trans i18nKey="Contact.form.firstName" />}
               variant="filled"
               margin="normal"
               name="firstName"
@@ -62,7 +65,7 @@ class Contact extends React.Component {
             <TextField
               className={d.input}
               id="standard-uncontrolled"
-              label="Last Name"
+              label={<Trans i18nKey="Contact.form.lastName" />}
               variant="filled"
               margin="normal"
               name="lastName"
@@ -75,13 +78,13 @@ class Contact extends React.Component {
               autoComplete="email"
               className={d.input2}
               id="standard-uncontrolled"
-              label="Email"
+              label={<Trans i18nKey="Contact.form.email" />}
               margin="normal"
               onChange={this.formOnChange.bind(this, 'email')}
             />
             <TextField
               id="standard-textarea"
-              label="Message"
+              label={<Trans i18nKey="Contact.form.message" />}
               multiline
               rowsMax="10"
               className={d.input3}
@@ -97,7 +100,7 @@ class Contact extends React.Component {
               className={d.submit}
               onClick={this.submitForm}
             >
-              Submit
+              <Trans i18nKey="Contact.form.button" />
             </Button>
             {message}
           </form>
@@ -109,4 +112,4 @@ class Contact extends React.Component {
   }
 }
 
-export default Contact;
+export default withNamespaces("translation")(Contact);

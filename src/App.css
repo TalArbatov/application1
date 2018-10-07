@@ -1,0 +1,18 @@
+.App {
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: Gisha;
+  overflow-y:hidden;
+}
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+.App-title {
+  font-size: 1.5em;
+}
+.App-intro {
+  font-size: large;
+}

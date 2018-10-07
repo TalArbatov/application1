@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class NotMaom extends Component {
+export default class NotMain extends Component {
 
     authenticate() {
         return new Promise(resolve => setTimeout(resolve, 500))

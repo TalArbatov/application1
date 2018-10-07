@@ -10,8 +10,9 @@ import intuitive from '../../images/values/intuitive.svg';
 import responsive from '../../images/values/responsive.svg';
 import secure from '../../images/values/secure.svg';
 
+import { withNamespaces, NamespacesConsumer, Trans } from "react-i18next";
 
-export default class Resume extends Component {
+ class Resume extends Component {
 
     download = (e) => {
         console.log('downloading...');
@@ -34,13 +35,21 @@ export default class Resume extends Component {
                 <p>My resume:</p>
                 <div><button className={d.downloadButton} onClick={this.download}>download PDF</button></div> */}
 
-                <div className={d.flexHexagon}>
-                    <Hexagon icon={fast} text='Lag free and fast load times.' title='FAST'/>
+                {/* <div className={d.flexHexagon}>
+                    <Hexagon icon={fast} text={<Trans i18nKey="Values.fast.description" />} title={<Trans i18nKey="Values.fast.title" />}/>
                     <Hexagon icon={elegant} text='Beautiful and clean design with a minimalistic style.' title='ELEGANT'/>
                     <Hexagon icon={bolt} text="Immersive design filled with functionality." title='DYNAMIC'/>
                     <Hexagon icon={intuitive} text='Accessive and easy to use UX.' title="INTUITIVE"/>
                     <Hexagon icon={responsive} text='Flexible design that fits on any device.' title='RESPONSIVE'/>
                     <Hexagon icon={secure} text='Reliable software and protection technology.' title="SECURE"/>
+                </div> */}
+                 <div className={d.flexHexagon}>
+                    <Hexagon icon={fast} text={<Trans i18nKey="Values.fast.description" />} title={<Trans i18nKey="Values.fast.title" />}/>
+                    <Hexagon icon={elegant} text={<Trans i18nKey="Values.elegant.description" />} title={<Trans i18nKey="Values.elegant.title" />}/>
+            <Hexagon icon={bolt} text={<Trans i18nKey="Values.dynamic.description" />} title={<Trans i18nKey="Values.dynamic.title" />}/>
+                    <Hexagon icon={intuitive} text={<Trans i18nKey="Values.intuitive.description" />} title={<Trans i18nKey="Values.intuitive.title" />}/>
+            <Hexagon icon={responsive} text={<Trans i18nKey="Values.responsive.description" />} title={<Trans i18nKey="Values.responsive.title" />}/>
+            <Hexagon icon={secure} text={<Trans i18nKey="Values.secure.description" />} title={<Trans i18nKey="Values.secure.title" />}/>
                 </div>
 
 
@@ -63,3 +72,4 @@ export default class Resume extends Component {
         );
     }
 }
+export default withNamespaces("translation")(Resume)

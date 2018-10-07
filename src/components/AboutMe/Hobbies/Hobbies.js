@@ -13,6 +13,8 @@ import Fade from 'react-reveal/Fade';
 import Flash from 'react-reveal/Flash';
 import MediaQuery from 'react-responsive';
 
+import { withNamespaces, NamespacesConsumer, Trans } from "react-i18next";
+
 
 const Hobbies = props => {
     return [
@@ -22,14 +24,14 @@ const Hobbies = props => {
             <div className={d.container} >
                 <ul>
                     <div className={d.expFlex}>
-                    <li className={d.titleContainer}><p className={d.title}>My Hobbies</p></li>
+                    <li className={d.titleContainer}><p className={d.title}><Trans i18nKey="AboutMe.Hobbies.title" /></p></li>
 
                         <Fade right>
-                            <Hobby logo={robot} description={'Machine Learning'} />
-                            <Hobby logo={book} description={'Science & Literature'} />
-                            <Hobby logo={brain} description={'Cognitive Psychology'} />
-                            <Hobby logo={videogame} description={'Video Games'} />
-                            <Hobby logo={art} description={'Drawing & Painting'} />
+                            <Hobby logo={robot} description={<Trans i18nKey="AboutMe.Hobbies.Hobby1" />} />
+                            <Hobby logo={book} description={<Trans i18nKey="AboutMe.Hobbies.Hobby2" />} />
+                            <Hobby logo={brain} description={<Trans i18nKey="AboutMe.Hobbies.Hobby3" />} />
+                            <Hobby logo={videogame} description={<Trans i18nKey="AboutMe.Hobbies.Hobby4" />} />
+                            <Hobby logo={art} description={<Trans i18nKey="AboutMe.Hobbies.Hobby5" />} />
                         </Fade>
                     </div>
                 </ul>
@@ -41,14 +43,14 @@ const Hobbies = props => {
             <div className={d.container2} >
                 <ul>
                     <div className={d.expFlex}>
-                    <li className={d.titleContainer}><p className={d.title}>My Hobbies</p></li>
+                    <li className={d.titleContainer}><p className={d.title}><Trans i18nKey="AboutMe.Hobbies.title" /></p></li>
 
                         <Fade right>
-                            <Hobby logo={robot} description={'Machine Learning'} />
-                            <Hobby logo={book} description={'Science & Literature'} />
-                            <Hobby logo={brain} description={'Cognitive Psychology'} />
-                            <Hobby logo={videogame} description={'Video Games'} />
-                            <Hobby logo={art} description={'Drawing & Painting'} />
+                            <Hobby logo={robot} description={<Trans i18nKey="AboutMe.Hobbies.Hobby1" />} />
+                            <Hobby logo={book} description={<Trans i18nKey="AboutMe.Hobbies.Hobby2" />} />
+                            <Hobby logo={brain} description={<Trans i18nKey="AboutMe.Hobbies.Hobby3" />} />
+                            <Hobby logo={videogame} description={<Trans i18nKey="AboutMe.Hobbies.Hobby4" />} />
+                            <Hobby logo={art} description={<Trans i18nKey="AboutMe.Hobbies.Hobby5" />} />
                         </Fade>
                     </div>
                 </ul>
@@ -57,4 +59,4 @@ const Hobbies = props => {
     ]
 }
 
-export default Hobbies;
+export default withNamespaces("translation")(Hobbies);

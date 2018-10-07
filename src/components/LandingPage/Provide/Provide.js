@@ -46,6 +46,7 @@ import ssl from '../../../images/provide-icons/database/ssl.svg';
 
 import { withLocalize } from 'react-localize-redux';
 import { Translate } from "react-localize-redux";
+import { withNamespaces, NamespacesConsumer, Trans } from "react-i18next";
 
 
 import MediaQuery from 'react-responsive';
@@ -67,34 +68,41 @@ const Provide = () => {
 
                     <Parallax className={d.parallax} offsetXMax={50} offsetXMin={-90} slowerScrollRate tag="figure">
                         {/* <ProvideCard info={'Responsive and elegant Web & Mobile Applications'} icon={web} logos={[{ src: materialUi, size: 40 }, { src: react, size: 50 }, { src: angular, size: 50 }, { src: bootstrap, size: 50 }, { src: photoshop, size: 50 }, { src: redux, size: 50 }]} /> */}
-                        <ProvideCard info={<Translate id="movie.provide.web">Responsive and elegant Web & Mobile Applications</Translate>} icon={web} logos={[{ src: materialUi, size: 40 }, { src: react, size: 50 }, { src: angular, size: 50 }, { src: bootstrap, size: 50 }, { src: photoshop, size: 50 }, { src: redux, size: 50 }]} />
+                        {/* <ProvideCard info={<Translate id="movie.provide.web">Responsive and elegant Web & Mobile Applications</Translate>} icon={web} logos={[{ src: materialUi, size: 40 }, { src: react, size: 50 }, { src: angular, size: 50 }, { src: bootstrap, size: 50 }, { src: photoshop, size: 50 }, { src: redux, size: 50 }]} /> */}
+                        <ProvideCard info={<Trans i18nKey="landingPage.provide.web" />} icon={web} logos={[{ src: materialUi, size: 40 }, { src: react, size: 50 }, { src: angular, size: 50 }, { src: bootstrap, size: 50 }, { src: photoshop, size: 50 }, { src: redux, size: 50 }]} />
 
                     </Parallax>
                     
 
                     <Parallax className={d.parallax} offsetXMax={17} offsetXMin={-30} slowerScrollRate tag="figure">
-                        <ProvideCard info={'Highspeed and reliable  backend and API solutions'} icon={backend} logos={[{ src: nodejs, size: 35 }, { src: asp, size: 50 }, { src: ruby, size: 50 }, { src: npm, size: 25 }, { src: php, size: 35 }]} />
+                        {/* <ProvideCard info={'Highspeed and reliable  backend and API solutions'} icon={backend} logos={[{ src: nodejs, size: 35 }, { src: asp, size: 50 }, { src: ruby, size: 50 }, { src: npm, size: 25 }, { src: php, size: 35 }]} /> */}
+                        <ProvideCard info={<Trans i18nKey="landingPage.provide.backend" />} icon={backend} logos={[{ src: nodejs, size: 35 }, { src: asp, size: 50 }, { src: ruby, size: 50 }, { src: npm, size: 25 }, { src: php, size: 35 }]} />
+
                     </Parallax>
 
                     <Parallax className={d.parallax} offsetXMax={-17} offsetXMin={30} slowerScrollRate tag="figure">
-                        <ProvideCard info={'Clean workflow and fast team-oriented integration'} icon={workflow} logos={[{ src: slack, size: 50 }, { src: circleci, size: 50 }, { src: git, size: 50 }, { src: github, size: 50 }, { src: grunt, size: 50 }, { src: webpack, size: 60 }]} />
+                        {/* <ProvideCard info={'Clean workflow and fast team-oriented integration'} icon={workflow} logos={[{ src: slack, size: 50 }, { src: circleci, size: 50 }, { src: git, size: 50 }, { src: github, size: 50 }, { src: grunt, size: 50 }, { src: webpack, size: 60 }]} /> */}
+                        <ProvideCard info={<Trans i18nKey="landingPage.provide.workflow" />} icon={workflow} logos={[{ src: slack, size: 50 }, { src: circleci, size: 50 }, { src: git, size: 50 }, { src: github, size: 50 }, { src: grunt, size: 50 }, { src: webpack, size: 60 }]} />
+
                     </Parallax>
 
                     <Parallax className={d.parallax} offsetXMax={-50} offsetXMin={90} slowerScrollRate tag="figure">
-                        <ProvideCard info={'Secure database construction and administration'} icon={database} logos={[{ src: firebase, size: 50 }, { src: mongodb, size: 35 }, { src: ssl, size: 50 }, { src: ssms, size: 50 }, { src: graphql, size: 50 }]} />
+                        {/* <ProvideCard info={'Secure database construction and administration'} icon={database} logos={[{ src: firebase, size: 50 }, { src: mongodb, size: 35 }, { src: ssl, size: 50 }, { src: ssms, size: 50 }, { src: graphql, size: 50 }]} /> */}
+                        <ProvideCard info={<Trans i18nKey="landingPage.provide.database" />} icon={database} logos={[{ src: firebase, size: 50 }, { src: mongodb, size: 35 }, { src: ssl, size: 50 }, { src: ssms, size: 50 }, { src: graphql, size: 50 }]} />
+
                     </Parallax>
                 </MediaQuery>
 
 
                 <MediaQuery maxWidth={1224}>
 
-                    <ProvideCard info={'Responsive and elegant Web & Mobile Applications'} icon={web} logos={[{ src: materialUi, size: 40 }, { src: react, size: 50 }, { src: angular, size: 50 }, { src: bootstrap, size: 50 }, { src: photoshop, size: 50 }, { src: redux, size: 50 }]} />
+                    <ProvideCard info={<Trans i18nKey="landingPage.provide.web" />} icon={web} logos={[{ src: materialUi, size: 40 }, { src: react, size: 50 }, { src: angular, size: 50 }, { src: bootstrap, size: 50 }, { src: photoshop, size: 50 }, { src: redux, size: 50 }]} />
 
-                    <ProvideCard info={'Highspeed and reliable  backend and API solutions'} icon={backend} logos={[{ src: nodejs, size: 35 }, { src: asp, size: 50 }, { src: ruby, size: 50 }, { src: npm, size: 25 }, { src: php, size: 35 }]} />
+                    <ProvideCard info={<Trans i18nKey="landingPage.provide.backend" />} icon={backend} logos={[{ src: nodejs, size: 35 }, { src: asp, size: 50 }, { src: ruby, size: 50 }, { src: npm, size: 25 }, { src: php, size: 35 }]} />
 
-                    <ProvideCard info={'Clean workflow and fast team-oriented integration'} icon={workflow} logos={[{ src: slack, size: 50 }, { src: circleci, size: 50 }, { src: git, size: 50 }, { src: github, size: 50 }, { src: grunt, size: 50 }, { src: webpack, size: 60 }]} />
+                    <ProvideCard info={<Trans i18nKey="landingPage.provide.workflow" />} icon={workflow} logos={[{ src: slack, size: 50 }, { src: circleci, size: 50 }, { src: git, size: 50 }, { src: github, size: 50 }, { src: grunt, size: 50 }, { src: webpack, size: 60 }]} />
 
-                    <ProvideCard info={'Secure database construction and administration'} icon={database} logos={[{ src: firebase, size: 50 }, { src: mongodb, size: 35 }, { src: ssl, size: 50 }, { src: ssms, size: 50 }, { src: graphql, size: 50 }]} />
+                    <ProvideCard info={<Trans i18nKey="landingPage.provide.database" />} icon={database} logos={[{ src: firebase, size: 50 }, { src: mongodb, size: 35 }, { src: ssl, size: 50 }, { src: ssms, size: 50 }, { src: graphql, size: 50 }]} />
                 </MediaQuery>
 
             </div>
@@ -103,4 +111,4 @@ const Provide = () => {
     );
 };
 
-export default Provide;
+export default withNamespaces("translation")(Provide);

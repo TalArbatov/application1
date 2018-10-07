@@ -2,6 +2,9 @@ import React from 'react';
 import d from './Hexagon.css';
 import hexagon from '../../../images/hexagon.png';
 
+import { withNamespaces, NamespacesConsumer, Trans } from "react-i18next";
+
+
 const Hexagon = (props) => {
     return (
         <div className={d.container}>
@@ -27,4 +30,4 @@ const landingBanner = {
 
 }
 
-export default Hexagon;
+export default withNamespaces("translation")(Hexagon);
