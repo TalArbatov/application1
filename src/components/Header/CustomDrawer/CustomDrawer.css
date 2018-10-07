@@ -1,5 +1,9 @@
 .list {
     width:350px;
+    max-width:70vw;
+}
+.list ul {
+    padding:0;
 }
 .drawer {
     position: fixed;
