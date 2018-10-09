@@ -20,18 +20,31 @@
 }
 
 .titleElement {
-	animation-name: titleElementOpacity;
+	/* animation-name: titleElementOpacity;
 	animation-iteration-count: 1;
 	animation-duration: 0.7s;
     animation-delay: 2.4s;
     animation-timing-function: ease-out;
-    animation-fill-mode: forwards;
-    opacity: 0;
+    animation-fill-mode: forwards; */
+    /* opacity: 0; */
     color: #EFEFEF;
     font-family: Gisha;
     margin: 0;
     font-size: 40px;
     display: inline-block;
+    margin-bottom:20px;
+}
+.subtitleElement {
+    color: #efefef;
+    font-family: Gisha;
+    margin:0;
+    font-size:20px;
+    max-width: 500px;
+    display: inline-block;
+}
+
+.paragraphs {
+    padding:40px;
 }
 
 @keyframes titleElementOpacity {
