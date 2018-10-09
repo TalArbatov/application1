@@ -29,7 +29,7 @@ class LanguageButtons extends React.Component {
       <div className={d.listContainer}>
       <div className={d.list}>
 
-          <ListItem
+          <ListItem button
       
       classes={{display:'inline-bock', width:'40%'}}
 
@@ -44,6 +44,7 @@ class LanguageButtons extends React.Component {
         <ListItemText primary="עברית" />
       </ListItem>
       <ListItem
+      button
       className={d.listItem}
       classes={{display:'inline-bock', width:'40%'}}
         onClick={() => {

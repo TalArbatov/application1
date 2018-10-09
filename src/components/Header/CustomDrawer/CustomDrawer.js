@@ -8,7 +8,7 @@ import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import InboxIcon from "@material-ui/icons/Code";
-import {Person, Assessment, LocalPhone} from '@material-ui/icons'
+import {Person, Assessment, LocalPhone, Language} from '@material-ui/icons'
 import ListItemText from "@material-ui/core/ListItemText";
 import Scrollspy from "react-scrollspy";
 import { Typography } from "@material-ui/core";
