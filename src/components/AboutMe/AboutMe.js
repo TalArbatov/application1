@@ -15,7 +15,7 @@ class AboutMe extends Component {
 
     return (
       <div ref="hello" className={d.flexContainer} style={{...styles.background , ...style}}>
-        <AboutMeText flexBasis="75%" />
+        <AboutMeText />
         <Hobbies flexBasis="15%" />
       </div>
     );

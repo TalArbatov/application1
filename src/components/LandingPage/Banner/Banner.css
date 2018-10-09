@@ -6,7 +6,7 @@
         opacity: 1;
     }
     100% {
-        opacity: 0.5;
+        opacity:1;
     }
 }
 .landingBanner {
@@ -30,8 +30,8 @@
     color: #EFEFEF;
     font-family: Gisha;
     margin: 0;
-    font-size: 60px;
-
+    font-size: 40px;
+    display: inline-block;
 }
 
 @keyframes titleElementOpacity {

@@ -48,24 +48,37 @@ class Header extends React.Component {
               News
           </Typography> */}
             <MediaQuery minWidth={650}>
-              <div style={{ display: "flex", width: "100%", justifyContent:'space-between'}}>
-               
+              <div
+                style={{
+                  display: "flex",
+                  width: "100%",
+                  justifyContent: "space-between"
+                }}
+              >
                 <div style={{ display: "inline-flex", flexDirection: "row" }}>
                   <Trigger test="test" />
                 </div>
-                <div style={{ display: "inline-flex", flexDirection: "row-reverse" }}>
-                  <Button color="inherit">
-                    <Trans i18nKey="Header.Skills" />
-                  </Button>
-                  <Button color="inherit">
-                    <Trans i18nKey="Header.AboutMe" />
-                  </Button>
-                  <Button color="inherit">
-                    <Trans i18nKey="Header.Values" />
-                  </Button>
-                  <Button color="inherit">
-                    <Trans i18nKey="Header.ContactMe" />
-                  </Button>
+                <div
+                  style={{
+                    display: "inline-flex",
+                    flexDirection: "row-reverse"
+                  }}
+                >
+                  <Scrollspy
+                    className={d.scrollspy}
+                    items={["about-me", "skills", "section-3"]}
+                    currentClassName="is-current"
+                  >
+                    <Button href='#skills' color="inherit">
+                      <Trans i18nKey="Header.Skills" />
+                    </Button>
+                    <Button href='#about-me' color="inherit">
+                      <Trans i18nKey="Header.AboutMe" />
+                    </Button>
+                    <Button href='#contact' color="inherit">
+                      <Trans i18nKey="Header.ContactMe" />
+                    </Button>
+                  </Scrollspy>
                 </div>
               </div>
             </MediaQuery>

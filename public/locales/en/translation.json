@@ -9,7 +9,7 @@
     "title": "Hello, I am Tal.",
     "subtitle": "A Fullstack web developer with a passion for creating clean and elegant solutions.",
     "provide": {
-      "web": "Responsive and elegant Web & Mobile Applications.",
+      "web": "Responsive and elegant Web Applications.",
       "backend": "Highspeed and reliable backend and API solutions.",
       "workflow": "Clean workflow and fast team-oriented integration.",
       "database": "Secure database construction and administration."
@@ -50,9 +50,9 @@
   "AboutMe": {
     "mainText": {
       "title": "About me",
-      "p1": "I'm a 20-year-old web & mobile application developer with a great passion for my work, and currently finishing my mandatory service in the army.",
-      "p2": "I'm serving as a Fullstack web developer in an Information Systems department with exclusively software engineers. As the youngest developer in the department, I've provided modern and innovative technologies, doubled development output by more than twice, and embedded modern workflow protocols and advanced integration services.",
-      "p3": "During my service, I received 3 certificates of excellence, developed 75% of my department's output, sent to 3 professional courses regarding development, web security and system administration, and worked on countless side-projects on my own.",
+      "p1": "I'm a web developer and graphic designer living in Modi'in, Israel and serving my mandatory service in the army. I spend the rest of my time developing and integrating start-ups as side-projects and various Freelance work.",
+      "p2": "In the army, I'm serving as a Fullstack web developer in an Information Systems department with exclusively software engineers. As the youngest, I've provided modern and innovative technologies, doubled development output by more than twice, and embedded modern workflow protocols and advanced integration services. During my service, I received 3 certificates of excellence, developed 75% of my department's output, sent to 3 professional courses regarding development, web security and system administration, and worked on countless side-projects on my own.",
+      "p3": "",
       "p4": "I'm serving as a Fullstack web developer in an Information Systems department with exclusively software engineers. As the youngest developer in the department, I've provided modern and innovative technologies, doubled development output by more than twice, and embedded modern workflow protocols and advanced integration services.",
       "p5": "During my service, I received 3 certificates of excellence, developed 75% of my department's output, sent to 3 professional courses regarding development, web security and system administration, and worked on countless side-projects on my own."
     },

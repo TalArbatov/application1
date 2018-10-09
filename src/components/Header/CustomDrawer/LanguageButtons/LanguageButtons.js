@@ -11,13 +11,13 @@ import ListItemText from "@material-ui/core/ListItemText";
 import Scrollspy from "react-scrollspy";
 import { Typography } from "@material-ui/core";
 import * as actions from "../../../../store/actionTypes";
-
+import Language from "@material-ui/icons/Language";
 class LanguageButtons extends React.Component {
-
-    languageHandler = lang => {
-        console.log("starting redux for " + lang);
-        this.props.toggleLanguage(lang);
-      };
+  languageHandler = lang => {
+    console.log("starting redux for " + lang);
+    this.props.toggleLanguage(lang);
+    this.props.toggleDrawer();
+  };
 
   render() {
     const { t, i18n } = this.props;
@@ -25,26 +25,43 @@ class LanguageButtons extends React.Component {
     const changeLanguage = lng => {
       i18n.changeLanguage(lng);
     };
-    return [
-      <ListItem  onClick={() => {
-        changeLanguage("he");
-        this.languageHandler("he");
-      }}>
-        <ListItemIcon>
+    return (
+      <div className={d.listContainer}>
+      <div className={d.list}>
+
+          <ListItem
+      
+      classes={{display:'inline-bock', width:'40%'}}
+
+        onClick={() => {
+          changeLanguage("he");
+          this.languageHandler("he");
+        }}
+      >
+        {/* <ListItemIcon>
           <InboxIcon />
-        </ListItemIcon>
+        </ListItemIcon> */}
         <ListItemText primary="עברית" />
-      </ListItem>,
-        <ListItem  onClick={() => {
-            changeLanguage("en");
-            this.languageHandler("en");
-          }}>
-            <ListItemIcon>
-              <InboxIcon />
-            </ListItemIcon>
-            <ListItemText primary="English" />
-          </ListItem>
-    ];
+      </ListItem>
+      <ListItem
+      className={d.listItem}
+      classes={{display:'inline-bock', width:'40%'}}
+        onClick={() => {
+          changeLanguage("en");
+          this.languageHandler("en");
+        }}
+      >
+        {/* <ListItemIcon>
+          <Language />
+        </ListItemIcon> */}
+        <ListItemText primary="English" />
+      </ListItem>
+
+</div>
+      </div>
+    )
+    
+ 
   }
 }
 

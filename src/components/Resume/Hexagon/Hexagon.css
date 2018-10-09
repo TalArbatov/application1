@@ -1,17 +1,14 @@
 .hexagon {
-  width:133px;
-  height:116px;
+  width: 106px;
+  height: 93px;
   display: flex;
   align-items: center;
   justify-items: center;
   justify-content: center;
-  
 }
 
-
 .hexagon img {
-  
-  width:70px;
+  width: 50px;
 }
 
 .container {
@@ -20,43 +17,46 @@
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom:20px;
+  margin-bottom: 20px;
 }
 /*pc*/
 @media only screen and (min-width: 800px) {
   .container {
-    width:220px;
-
+    width: 190px;
+  }
+  .text {
+    max-width: 180px;
   }
 }
 /*phone*/
 @media only screen and (max-width: 800px) {
-.container {
-  width:200px;
-}
+  .container {
+    width: 160px;
+  }
+  .text {
+    max-width: 150px;
+  }
 }
 
 .text {
-  display:flex;
+  display: flex;
   justify-content: center;
   justify-items: center;
-  max-width: 200px;
-
 }
 .text p {
-  color:white;
+  color: white;
+  font-size: 16px;
 }
 .titleContainer {
   flex-basis: 100%;
-  color:white;
+  color: white;
   font-weight: 100;
   max-width: 200px;
 }
 .titleContainer p {
-  font-size:25px;
+  font-size: 22px;
   font-family: Gisha;
   letter-spacing: 2px;
-  margin:0;
+  margin: 0;
   margin-bottom: 10px;
-
 }

@@ -19,7 +19,7 @@ import { withNamespaces, NamespacesConsumer, Trans } from "react-i18next";
 const Hobbies = props => {
     return [
         //pc
-        <MediaQuery minWidth={700}>
+        <MediaQuery minWidth={800}>
 
             <div className={d.container} >
                 <ul>
@@ -38,7 +38,7 @@ const Hobbies = props => {
             </div>
         </MediaQuery>,
         //phone
-        <MediaQuery maxWidth={700}>
+        <MediaQuery maxWidth={800}>
 
             <div className={d.container2} >
                 <ul>

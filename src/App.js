@@ -9,13 +9,13 @@ import { ConnectedRouter } from "react-router-redux";
 export default class App extends Component {
   render() {
     return (
-        /* <Router>
+         <Router>
                     <Switch>
                         <Route exact path="/" component={Main} />
                         <Route exact path="/skills" component={NotMain} />
                     </Switch>
-                </Router> */
-        <Main />
+                </Router> 
+        
     );
   }
 }

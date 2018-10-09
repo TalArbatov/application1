@@ -8,6 +8,7 @@ import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import InboxIcon from "@material-ui/icons/Code";
+import {Person, Assessment, LocalPhone} from '@material-ui/icons'
 import ListItemText from "@material-ui/core/ListItemText";
 import Scrollspy from "react-scrollspy";
 import { Typography } from "@material-ui/core";
@@ -37,19 +38,25 @@ const CustomDrawer = props => {
             items={["about-me", "skills", "section-3"]}
             currentClassName="is-current"
           >
-            <ListItem button component="a" href="#skills">
+            <ListItem button component="a" href="#skills" onClick={props.toggleDrawer}>
               <ListItemIcon>
-                <InboxIcon />
+                <Assessment />
               </ListItemIcon>
               <ListItemText primary="My Skills" />
             </ListItem>
-            <ListItem button component="a" href="#about-me">
+            <ListItem button component="a" href="#about-me" onClick={props.toggleDrawer}>
               <ListItemIcon>
-                <InboxIcon />
+                <Person />
               </ListItemIcon>
               <ListItemText primary="About Me" />
             </ListItem>
-            <LanguageButtons />
+            <ListItem button component="a" href="#contact" onClick={props.toggleDrawer}>
+              <ListItemIcon>
+                <LocalPhone />
+              </ListItemIcon>
+              <ListItemText primary="Contact Me" />
+            </ListItem>
+            <LanguageButtons toggleDrawer={props.toggleDrawer}/>
           </Scrollspy>
         </List>
       </div>

@@ -8,7 +8,7 @@
     color:#efefef;
     font-family: Gisha;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 22px;
 }
 .flexContainer {
     display: flex;
@@ -21,7 +21,7 @@
     color:#efefef;
     font-family: Gisha;
     font-weight: 100;
-    font-size: 18px;
+    font-size: 16px;
     max-width: 700px;
     display: inline-block;
 }

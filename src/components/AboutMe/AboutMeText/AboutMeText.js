@@ -6,6 +6,7 @@ import { withNamespaces, NamespacesConsumer, Trans } from "react-i18next";
 const AboutMeText = props => {
   return (
     <div
+    className={d.parentContainer}
       style={{
         display: "inline",
         flexBasis: props.flexBasis,

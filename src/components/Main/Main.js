@@ -80,7 +80,7 @@ class Main extends Component {
           <Header />
           <LandingPage />
 
-          <section id="about-me">
+          <section id="skills">
             {/* <div style={{height:7, backgroundColor: '#d8d8d8'}}></div> */}
 
             <Skills />
@@ -88,7 +88,7 @@ class Main extends Component {
           <div style={{ height: 7, backgroundColor: "#6b32c5" }} />
 
           <Resume />
-          <section id="skills">
+          <section id="about-me">
             {/* <div style={{height:7, backgroundColor: '#d8d8d8'}}></div> */}
 
             <AboutMe />

@@ -1,5 +1,5 @@
 .navbar {
-    width:100vw;
+    width:90vw;
     height:30px;
     background: #fff;
     border-bottom:1px solid rgb(182, 182, 182);
@@ -32,4 +32,9 @@
 }
 .appbar , .appbar > div{
     min-height:0;
+}
+
+.scrollspy {
+    margin-top:0;
+    margin-bottom:0;
 }

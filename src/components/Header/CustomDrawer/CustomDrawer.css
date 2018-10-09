@@ -1,9 +1,14 @@
 .list {
     width:350px;
     max-width:70vw;
+    height:90vh;
+    overflow:hidden;
+
 }
 .list ul {
     padding:0;
+    height:100%;
+    overflow:hidden;
 }
 .drawer {
     position: fixed;

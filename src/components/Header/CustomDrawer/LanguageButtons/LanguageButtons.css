@@ -1,0 +1,16 @@
+.list li {
+    display:inline-block;
+    width:50%;
+    text-align: center;
+}
+.list {
+    position: relative;
+    bottom:0;
+}
+.listContainer {
+    bottom:0;
+    position: absolute;
+    display:flex;
+    justify-content: space-evenly;
+    width:100%;
+}
