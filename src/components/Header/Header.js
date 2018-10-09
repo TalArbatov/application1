@@ -56,7 +56,7 @@ class Header extends React.Component {
                 }}
               >
                 <div style={{ display: "inline-flex", flexDirection: "row" }}>
-                  <Trigger test="test" />
+                  <Trigger />
                 </div>
                 <div
                   style={{
